@@ -1,0 +1,417 @@
+/* Universal tags */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0a0e17;
+    color: #f1f5f9;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+span {
+    color: #00f2fe;
+}
+
+/* Navbar */
+header{
+    background-color: #0d1320;
+    border-bottom: 1px solid #26334d;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00f2fe;
+}
+
+.register-btn {
+    background-color: #3b82f6;
+    padding: 10px 17px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #2563eb;
+}
+
+/* Home section */
+.home {
+    min-height: 520px;
+    padding: 100px 25px;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(circle at 80% 30%, #142b49 0%, transparent 40%),
+        linear-gradient(135deg, #0a0e17, #101b30);
+}
+
+.home-cont {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.tag {
+    color: #00f2fe;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.home h1 {
+    font-size: clamp(36px, 5vw, 60px);
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.home-content > p:not(.tagline) {
+    max-width: 600px;
+    color: #b7c3d6;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+.home-btn a{
+    transform: translate(0,15px);
+}
+
+.home-btn {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* Button style */
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #2563eb;
+    transform: translateY(-3px);
+}
+
+.sec-btn {
+    border: 1px solid #00f2fe;
+    color: #00f2fe;
+}
+
+.sec-btn:hover {
+    background-color: #00f2fe;
+    color: #0a0e17;
+}
+
+/* call to action */
+.section {
+    padding: 80px 25px;
+}
+
+.section-heading {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: clamp(27px, 4vw, 38px);
+    margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+    color: #aab7ca;
+}
+
+/* 6. ABOUT AND FEATURES SECTION */
+.about {
+    background-color: #0d1320;
+}
+
+.ftr {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.ftr-card {
+    background-color: #131b2e;
+    padding: 30px 25px;
+    border: 1px solid #26334d;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.ftr-card:hover {
+    transform: translateY(-6px);
+    border-color: #00f2fe;
+    box-shadow: 0 0 18px #00f2fe20;
+}
+
+.ftr-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.ftr-card h3 {
+    margin-bottom: 10px;
+}
+
+.ftr-card p {
+    color: #aab7ca;
+}
+
+/* Event sec */
+
+.event-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    gap: 25px;
+}
+
+.event-card {
+    background-color: #131b2e;
+    border: 1px solid #26334d;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-6px);
+    border-color: #3b82f6;
+    box-shadow: 0 0 20px #3b82f630;
+}
+
+.event-image {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 65px;
+}
+
+.tech-image {
+    background: linear-gradient(135deg, #172e57, #2563eb);
+}
+
+.music-image {
+    background: linear-gradient(135deg, #4a1942, #c026d3);
+    /* background-image: url(); */
+}
+
+.gaming-image {
+    background: linear-gradient(135deg, #123d3b, #059669);
+    /* background-image: url(); */
+}
+
+.event-info {
+    padding: 22px;
+}
+
+.event-category {
+    display: inline-block;
+    color: #00f2fe;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.event-info h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.event-info p {
+    color: #aab7ca;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.event-info .btn {
+    margin-top: 15px;
+}
+
+
+/* 8. SCHEDULE SECTION */
+.schedule {
+    background-color: #0d1320;
+}
+
+.schedule-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.schedule-item {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 22px;
+    margin-bottom: 15px;
+    background-color: #131b2e;
+    border: 1px solid #26334d;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.schedule-item:hover {
+    border-color: #00f2fe;
+}
+
+.schedule-date {
+    min-width: 65px;
+    text-align: center;
+    padding: 10px;
+    background-color: #1c2742;
+    border-radius: 8px;
+}
+
+.schedule-date h3 {
+    font-size: 25px;
+    color: #00f2fe;
+}
+
+.schedule-date p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.schedule-details {
+    flex: 1;
+}
+
+.schedule-details p {
+    color: #aab7ca;
+    font-size: 14px;
+}
+
+.status {
+    color: #10b981;
+    background-color: #10b98118;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* 9. CALL TO ACTION SECTION */
+.cta {
+    text-align: center;
+    padding: 75px 25px;
+    background: linear-gradient(135deg, #142b49, #101b30);
+}
+
+.cta h2 {
+    font-size: clamp(26px, 4vw, 36px);
+    margin-bottom: 15px;
+}
+
+.cta p {
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+.cta-btn {
+    background-color: #00f2fe;
+    color: #0a0e17;
+}
+
+.cta-btn:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+
+/* 10. CONTACT SECTION */
+.contact-info {
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+    background-color: #131b2e;
+    border: 1px solid #26334d;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 12px 0;
+    color: #cbd5e1;
+}
+
+
+/* 11. FOOTER SECTION */
+footer {
+    padding: 35px 20px;
+    text-align: center;
+    background-color: #070a11;
+    border-top: 1px solid #26334d;
+}
+
+footer .logo {
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #aab7ca;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 15px;
+}
